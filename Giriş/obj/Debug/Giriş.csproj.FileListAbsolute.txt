@@ -1,0 +1,11 @@
+C:\Users\theda\RiderProjects\BankaSistem\Giriş\bin\Debug\Giriş.exe.config
+C:\Users\theda\RiderProjects\BankaSistem\Giriş\bin\Debug\Giriş.exe
+C:\Users\theda\RiderProjects\BankaSistem\Giriş\bin\Debug\Giriş.pdb
+C:\Users\theda\RiderProjects\BankaSistem\Giriş\obj\Debug\Giriş.csproj.AssemblyReference.cache
+C:\Users\theda\RiderProjects\BankaSistem\Giriş\obj\Debug\Giriş.Properties.Resources.resources
+C:\Users\theda\RiderProjects\BankaSistem\Giriş\obj\Debug\Giriş.csproj.GenerateResource.cache
+C:\Users\theda\RiderProjects\BankaSistem\Giriş\obj\Debug\Giriş.csproj.CoreCompileInputs.cache
+C:\Users\theda\RiderProjects\BankaSistem\Giriş\obj\Debug\Giriş.exe
+C:\Users\theda\RiderProjects\BankaSistem\Giriş\obj\Debug\Giriş.pdb
+C:\Users\theda\RiderProjects\BankaSistem\Giriş\obj\Debug\Giriş.Form1.resources
+C:\Users\theda\RiderProjects\BankaSistem\Giriş\obj\Debug\Giriş.formLogin.resources
