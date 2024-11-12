@@ -49,14 +49,19 @@ namespace Giriş
                 conn.Open();
                 string register = "INSERT INTO Login_new (username, password) VALUES (@username, @password)";
                 cmd = new SqlCommand(register, conn);
+                cmd.Parameters.AddWithValue("@username", txtusername.Text);
+                cmd.Parameters.AddWithValue("@password", txtPassword.Text);
                 cmd.ExecuteNonQuery();
-                conn.Close();
+
+                
 
                 txtusername.Text = "";
                 txtPassword.Text = "";
                 txtConfirmPassword.Text = "";
                 
+                
                 MessageBox.Show("Your account has ben successfuly created", "Registration Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                conn.Close();
                 
             }
             else
@@ -65,7 +70,9 @@ namespace Giriş
                 txtPassword.Clear();
                 txtConfirmPassword.Clear();
                 txtPassword.Focus();
+                conn.Close();
             }
+            conn.Close();
         }
 
         private void checkShowPassword_CheckedChanged(object sender, EventArgs e)

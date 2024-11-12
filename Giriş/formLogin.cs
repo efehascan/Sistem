@@ -43,8 +43,13 @@ namespace Giriş
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string login = "select * from tbl_login where username=@username and password=@password";
+            string login = "select * from Login_new where username=@username and password=@password";
             cmd = new SqlCommand(login, conn);
+            
+            cmd.Parameters.AddWithValue("@username", txtusernameLogin.Text); ///////
+            cmd.Parameters.AddWithValue("@password", txtPasswordLogin.Text); ///////
+            
+            
             SqlDataReader dr = cmd.ExecuteReader();
 
             if (dr.Read() == true)
@@ -58,9 +63,10 @@ namespace Giriş
                 txtusernameLogin.Clear();
                 txtPasswordLogin.Clear();
                 txtusernameLogin.Focus();
-                dr.Close();
-                conn.Close();
+
             }
+            dr.Close(); /////////
+            conn.Close(); ///////
             
         }
     }
